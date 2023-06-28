@@ -1,0 +1,114 @@
+/*!
+ * 2022 Andrew Meshkov
+ * www: https://meshkov.site
+ * mail: info@meshkov.site
+*/
+
+
+@media (max-width: 1199px) {
+
+    .logo__item {
+        width: 30%;
+    }
+
+    .title-1 {
+        font-size: 50px;
+    }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+    .header-nav,
+    .right-content,
+    .navbar-login-wrp {
+        display: none;
+    }
+
+    .header-navbar {
+        justify-content: space-between;
+    }
+
+    .mobile-nav-button {
+        display: block;
+    }
+
+    .left-content {
+        max-width: 100%;
+    }
+
+    .features-row {
+        flex-direction: column;
+    }
+
+    .features-row.rew{
+        flex-flow: column-reverse;
+    }
+
+    .features-left {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .features-img {
+        margin: 0 auto;
+    }
+
+    .features-right {
+        width: 100%;
+    }
+
+    .social-proof-raw {
+        flex-wrap: wrap;
+    }
+
+    .social-proof-column {
+        margin: 0;
+        width: 100%;
+    }
+
+    .column-link-wrp {
+        margin: 0 0 48px 0;
+    }
+
+    .pricing-card-wrp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-plan:not(:last-child){
+        margin: 0 0 48px 0;
+    }
+
+    .footer-col {
+        width: 30%;
+    }
+
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 45%;
+    }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+
+    .social-proof-content-wrp {
+        flex-wrap: wrap;
+    }
+
+    .content-item {
+        width: 100%;
+        margin: 0 0 48px 0;
+    }
+
+    .social-proof-content-wrp .content-item + .content-item {
+        margin: 0;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}

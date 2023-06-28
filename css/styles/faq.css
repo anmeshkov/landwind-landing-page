@@ -1,0 +1,73 @@
+/*
++++++++++++++++++++++++++++++++++++++
+FAQ
++++++++++++++++++++++++++++++++++++++
+*/
+
+.faq {
+    background-color: #fff;
+    padding: 0 0 96px 0;
+}
+
+.faq-heading {
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+.faq-title {
+    margin: 0;
+}
+
+/* accordion */
+.faq-accordion {
+    box-sizing: border-box;
+    max-width: 695px;
+    margin: 0 auto;
+}
+
+.accordion-title {
+    /* скрыть маркер */
+    display: block;
+    /* font */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #6B7280;
+    padding: 24px 0;
+    border-bottom: 1px solid #E5E7EB;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+
+/* стилизация маркера */
+.accordion-title::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url(../../img/chevron-down.svg) no-repeat center center;
+    background-size: cover;
+}
+.faq-details[open] .accordion-title::after {
+    background-image: url(../../img/chevron-up.svg);
+}
+
+.faq-details[open] .accordion-title {
+    color: #111928;
+}
+
+.accordion-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B7280;
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #E5E7EB;
+}

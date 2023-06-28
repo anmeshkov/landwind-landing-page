@@ -1,0 +1,33 @@
+/*
++++++++++++++++++++++++++++++++++++++
+CTA
++++++++++++++++++++++++++++++++++++++
+*/
+
+.cta {
+    background-color: #F9FAFB;
+    padding: 96px 0;
+}
+
+.cta-heading {
+    max-width: 640px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cta-title {
+    margin: 0;
+}
+
+.cta-subtitle {
+    margin: 24px 0;
+}
+
+.cta-button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
